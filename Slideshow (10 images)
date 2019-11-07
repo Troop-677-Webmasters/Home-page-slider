@@ -14,10 +14,10 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-containe {
-  max-width: 9999px;
-  max-height: 9999px;
-  position: center;
-  margin: auto;
+  width: 1370px;
+  height: 500px;
+  position: left;
+  margin: none;
 }
 
 /* Caption text */
