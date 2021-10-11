@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+
+	</script>
+
+	<!-- Bootstrap CSS -->
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+
+</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'>
+	</script>
+<style>
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/*TWH CSS overrides*/
+.new-row {margin: 0;}
+.new-row text-center with-border {display: none}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    /* margin-top already 20 px */
+    margin-bottom: 20px;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+/*TWH CSS overrides ^^*/
+
+.footer {
+	text-align: left;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: white;
+	padding-top: 15px;
+  padding-bottom: 20px;
+  position: relative;
+  /*TWH min-width bypass with defined width here and overflow-x: hidden on background image later */
+  width: 2000px; /* << width may be too small on very large screens*/
+}
+
+
+.footer h4 {
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+.footer-main {
+	background: #36454F;
+}
+
+.footer-sub {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+	background-color: #20292F;
+	margin-top: -1px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-sub p {
+	font-size: 13px !important;
+}
+
+.footer-sub a {
+	color: var(--oa-white);
+	transition: all 0.25s;
+}
+
+.footer-sub a:hover {
+	color: #FC1B41 !important;
+}
+
+.footer-main>div.row-sub {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.footer-sub>div.row-sub {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+ul.footer-links {
+	list-style: none;
+}
+
+ul.footer-links li {
+	padding-bottom: 5px;
+}
+
+ul.footer-links li *:not(i),
+ul.footer-links li a:visited {
+	color: white;
+	font-weight: normal;
+	text-decoration: none;
+	transition: all 0.25s;
+}
+
+ul.footer-links li i {
+	color: white;
+	text-decoration: none;
+	transition: all 0.25s;
+}
+
+ul.footer-links li:hover *,
+ul.footer-links li:hover a:visited {
+	color: #006699;
+}
+
+.footer-socialmedia {
+	padding-left: 5px;
+}
+
+.footer-socialmedia i {
+	padding-right: 6px;
+  padding-left: 6px;
+	font-size: 30px;
+	transition: all 0.25s;
+	color: white;
+  padding-top: 7px;
+}
+
+.footer-socialmedia i:hover {
+	color: #006699;
+}
+
+.list-group>.list-group-item>.fa.fa-chevron-right {
+	float: right;
+}
+
+.footer-main {
+	background-image: url("https://oa-bsa.org/themes/oabsa-theme/images/bsa_action_folio.svg");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-attachment: scroll;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: 30px;
+  /* TWH defined width fix with overflow-x: hidden; and max-width*/
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+@media screen and (max-width:768px) {
+	.footer-main {
+		background-size: 768px;
+		background-position: left bottom;
+	}
+}
+
+body.page-node-type-history-page article>footer {
+	display: none;
+}
+
+#lookingtojoin {
+  position: relative;
+  display: flex;
+  margin-top: 33px;
+  float: left;
+  padding: 17px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #3185d8;
+  border-radius: 17px 17px 17px 17px;
+  color: white;
+  transition-duration: 0.2s;
+}
+
+#lookingtojoin:hover {
+  text-decoration: none;
+  background-color: #315bd8;
+  color: #fff;
+    text-shadow:
+    -0.3px -0.3px 0 rgb(255, 255, 255),
+    0.3px -0.3px 0 rgb(255, 255, 255),
+    -0.3px 0.3px 0 rgb(255, 255, 255),
+    0.3px 0.3px 0 rgb(255, 255, 255);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+</style>
+<body>
+<footer class="footer-main">
+			<div class="container-fluid footer footer-main">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+				<div class="row-sub">
+
+					<div class="col-sm-4">
+						<h4>Quick Links</h4>
+						<ul class="footer-links fa-ul">
+							<li><a href="https://www.troopwebhost.org/FormList.aspx?Menu_Item_ID=45922&Stack=1&Application_ID=855"><i class="fa-li fas fa-calendar-alt">&nbsp;</i>Calendar</a></li>
+              <li><a href="https://www.troopwebhost.org/formCustom.aspx?Menu_Item_ID=48257&Stack=0&Custom_Form_ID=2&Application_ID=855"><i class="fa-li fas fa-address-book">&nbsp;</i>About Our Troop</a></li>
+              <li><a href="https://www.troopwebhost.org/formCustom.aspx?Menu_Item_ID=51587&Stack=0&Custom_Form_ID=9&Application_ID=855"><i class="fa-li fas fa-trophy">&nbsp;</i>Eagle Scouts</a></li>
+              <li><a href="https://www.troopwebhost.org/FormList.aspx?Menu_Item_ID=45869&Stack=1&Application_ID=855"><i class="fa-li fas fa-users">&nbsp;</i>Our Adults Leaders</a></li>
+              <li><a href="https://www.troopwebhost.org/formCustom.aspx?Menu_Item_ID=55241&Stack=0&Custom_Form_ID=34&Application_ID=855"><i class="fa-li fas fa-dollar-sign">&nbsp;</i>Fundraisers</a></li>
+              <li><a href="https://www.troopwebhost.org/formCustom.aspx?Menu_Item_ID=54915&Stack=0&Custom_Form_ID=28&Application_ID=855"><i class="fa-li fas fa-book">&nbsp;</i>Survival Guide</a></li>
+              <li><a href="https://www.troopwebhost.org/formCustom.aspx?Menu_Item_ID=54911&Stack=0&Custom_Form_ID=24&Application_ID=855"><i class="fa-li fas fa-question">&nbsp;</i>FAQs</a></li>
+              <li><a href="https://www.troopwebhost.org/formCustom.aspx?Menu_Item_ID=48262&Stack=0&Custom_Form_ID=7&Application_ID=855"><i class="fa-li fas fa-info-circle">&nbsp;</i>Help Desk</a></li>
+              <li><a href="https://www.troopwebhost.org/bsaShowTroopForms.aspx?Menu_Item_ID=45870&Stack=1&Application_ID=855"><i class="fa-li fas fa-file-alt">&nbsp;</i>Forms & Documents</a></li>
+            </ul>
+          </div>
+
+			    <div class="col-sm-4">
+            <h4>Organization Links</h4>
+            <ul class="footer-links fa-ul">
+              <li><a href="https://www.scouting.org/" target="_blank"><i class="fa-li fas fa-compass">&nbsp;</i>Boy Scouts of America</a></li>
+              <li><a href="https://stlbsa.org/" target="_blank"><i class="fa-li fas fa-compass"></i>Greater St. Louis Area Council</a></li>
+              <li><a href="https://stlbsa.org/find-your-district/new-horizons-district/" target="_blank"><i class="fa-li fas fa-compass"></i>New Horizons</a></li>
+              <li><a href="https://oa-bsa.org" target="_blank"><i class="fa-li fas fa-compass"></i>Order of the Arrow</a></li>
+              <li><a href="https://www.scoutshop.org/" target="_blank"><i class="fa-li fas fa-compass"></i>Scout Shop</a></li>
+              <li><a href="https://crew677.org" target="_blank"><i class="fa-li fas fa-compass"></i>Venture Crew 677</a></li>
+            </ul>
+			    </div>
+
+			  <div class="col-sm-4">
+            <h4>Info</h4>
+            <p class="footer-socialmedia">
+              <a href="https://www.facebook.com/stlbsa/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+              <a href="https://twitter.com/stlbsa" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+              <a href="https://www.instagram.com/stlbsa/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+              <a href="https://www.youtube.com/user/stlbsavideos" target="_blank"><i class="fab fa-youtube-square fa-2x"></i></a>
+              <a href="https://gallery.troop677.org/" target="_blank"><i class="far fa-images fa-2x"></i></a>
+            <ul class="footer-links fa-ul">
+              <li><a href="mailto:scoutmaster@troop677.org"><i class="fa-li fas fa-phone-alt">&nbsp;</i><i style="font-style: normal; font-weight: bold;">Email: </i>scoutmaster@troop677.org</a></li>
+
+              <li><a href="https://goo.gl/maps/4KDEvSxUMDE8Kmfz8" target="_blank"><i class="fa-li fa fa-map-marker-alt">&nbsp;</i>
+              <i style="font-weight: bold; font-style: normal;">Troop 677</i>
+              <br>
+              <i style="font-style: normal;">17315 Manchester Road Wildwood, MO 63038</i></a></li>
+            </ul>
+            <div>
+                <a id="lookingtojoin" href="https://www.troopwebhost.org/formCustom.aspx?Menu_Item_ID=48260&Stack=0&Custom_Form_ID=5&Application_ID=855">Looking to Join Us?</a>
+			     </div>
+			  </div>
+		</div>
+	</div>
+</footer>
+</body>
+
+<!-- Freshdesk Embed Code -->
+<script>
+	window.fwSettings={
+	'widget_id':66000001686
+	};
+	!function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}() 
+</script>
+<script rel="freshdesk-widget" type='text/javascript' src='https://widget.freshworks.com/widgets/66000001686.js' async defer></script>
+<!-- End of Freshdesk Embed Code -->
+</script>
+</html>
