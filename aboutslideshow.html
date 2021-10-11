@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  </head>
+  <style>
+/*TWH CSS overrides*/
+.new-row {margin: 0;}
+.page-title {display: none}
+.new-row text-center with-border {display: none}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    /* margin-top already 20 px */
+    margin-bottom: 20px;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+/*TWH CSS overrides ^^*/
+
+/* Slideshow css start */
+.slideshow-container {
+  width: 100%;
+  padding-left: 48px;
+  font-family: Helvetica, sans-serif;
+  padding: 2rem;
+  background-color: #f0f0f5;
+  box-sizing: border-box;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.mySlides {display: none;}
+
+/* Title text */
+.title {
+  position: relative;
+  color: dark grey;
+  font-size: 27px;
+  font-weight: normal;
+  font-family: Helvetica, sans-serif;
+}
+
+/* Caption text */
+.caption {
+  position: relative;
+  font-family: Helvetica, sans-serif;
+  line-height: 2;
+  font-size: 18px;
+}
+
+.section-heading {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bcbcbc;
+  border-radius: 20%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #404040;
+}
+
+.dot:active {
+  background-color: #000000;
+  transition: background-color 0.3s ease;
+}
+
+/* Fading animation REMOVED (Does't work with TWH) Just add 'fade' to the mySlides className [class="mySlides fade"]*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.25s;
+  animation-name: fade;
+  animation-duration: 1.25s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+.img-responsive, col-md-4, row mySlides, col-md-8{
+  border: none;
+  padding: none;
+  decoration: none;
+  text-decoration: none;
+  padding-bottom: 30px;
+}
+
+.img-responsive {
+  width: 280px;
+}
+
+.col-md-4 {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+#header-img-space {
+  border: none;
+  padding: none;
+  decoration: none;
+  text-decoration: none;
+} 
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 6px 6px 6px 6px;
+  user-select: none;
+  color: black;
+}
+
+/* Prev next extra padding fixes */
+.prev {
+  padding-left: 8px;
+}
+.next {
+  padding-right: 8px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: #cccccc;
+  text-decoration: none;
+}
+
+.prev:active, .next:active {
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s ease;
+}/* slideshow css end */
+  </style>
+  <body>
+<!--slideshow html start -->
+    <div id="header-img-space">
+
+      <!--Welcome Message-->
+        <div class="slideshow-container">
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="section-heading">
+                <div class="text-center">
+                  <h1>About Troop 677</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Slide 1 -->
+          <div class="row mySlides">
+            <div class="col-md-4">
+              <center>
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/Gm9vHZbAWNtJrV9UtYcHA2D_5AnMsn0xErmWG6Zp-K8twDwv2zHeHL02hZxa7czwu0QMNbO_BlezNPnEv3HIf3xglZlUE_tuqxP9HYL0GkPTtJrDcUdz750vs6FcnH5LMPqP2mZOYyIFuRAl4HUU-dOJpqOfqXOmGE0h_7O-PvakRMWblG--viEE76_xgFTUd68H-ypG6ebmmo7P8xc_ngaWVEWkaGfthKIZDEhMCwn89sFv__Fwv58HFeHrdyfIaTc_k-YrdBK8UP_rwIVJhny4VU8sA5etvXooiwmtw_5-vQxBaSzdBso6uBhW6lJgq-xCPfgbTFyVAskv-mJwUeSAl1sES8Sl0N7iyUIgT53f6WfQPIgzLstcZ7Rr_-0sCjRnQdpNjty71_-BpDyw87ia_Y5xvgZDilXrNWH7Mxw3YfjUoJN5dROjEt6QuNb5he2VSQbZ3jP-FMkasdXLvk4ymNh76gHnXPLGrJNq4Ag1drzivZdnRo0oWep4oN45V6iYoH5TbCdd5qJ7lm8vw4oyEImUacD7teCGHeDHGQvQW2O3GiJp9bihsxuUkFpwr6K78PZ-8oqtlxRjDOuWgcxsaiMYzimdtD6CRm890FFOc69E5QCgFMpYbh8mbntq1ZHNG89NbH53nPCmDeA-AeNvv8dJTrS5M8gzFvm-7vDkuYilSZnI_ifHoJF_r5Ozw3Np1ooYaarulKO-AsFJxftA=w473-h625-no?authuser=3">
+                </center>
+            </div>
+
+            <div class="col-md-8">
+              <p class="title">Activities</p>
+              <p class="caption">Our troop has a TON of amazing outings and events that we do all year long! We are certain that we have something that you (scouts and adults!) will enjoy doing if you come on one of our outings. These include but are definetly not limmited to repelling,rock climbing, horseback riding, shotgun shooting, tomahawk throwing, bow and arrow, rifle shooting, zip-lining, small motor boating, kayaking, swimming, cooking, and much more!</p>
+            </div>
+          </div>
+
+          <!--Slide 2 -->
+          <div class="row mySlides">
+            <div class="col-md-4">
+              <center>
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/29-ZdaybHArSJHpaEz5nymz_hrAWRVMqIwpdj9mgDTQzewMeCx5DB5YuF9DafsbER_zUEyCK1D4c4DgllZQq3zN47A5YZaCA1SorUCO0Q3dXacjoxy8PP4_XOrVZFykYN46X6LUo1vmJd8MUo8AXBX1ocERJ_UBiYjjxbRDhYB7yl4vLk2R09QlKumESfAgtellJvChMp7RXFBK_4J0O42K_R-kzHbCc8bwprUGZ4hcqkwmeF1bQC7_vjuAlIE5YcSzaqLP6VdDbU03AuswNJXVzVasvSg9GalzvoE56fEhAML4KChXxSb7BfQp7Z7hxKYzAUMB9OdRFirPyIXS2nHirE3kswuTAx2Y0RWs1FnSkAfl8QPFop43gj002ixuewPRpV0txGczsSN0pLG8M1fo7okVpoRsEPeL39NNjy04IrE3DJIgZ7FiNdLlL_czE7NKsBu6tqS061mLqrgZ38wMHmXZCNRgJ1C6UiLK6CV5VnWuIzATsLb3xBVYzx6KLKfDlebLss3_aSX3vb45FuV8q7eb_hpzkMQt8NY6ES9FuDJcJBXATwtbXjt8k_p6tFXzGJBVNHD69xR8uSC6PsVqYBuCNnS-xZV7DXoMJQmx1MwuNQMT_N5SrqNnEsPhJ4exnc9kyW64QPuhGOYv6YalfapS6S_jLIrRY7gYdQ3UfPv5psfWJ0S9cwvuPt-LS1YcyzMyy7XR4J8Yv-gY2twt3=w473-h625-no?authuser=3">
+              </center>
+            </div>
+
+            <div class="col-md-8">
+              <p class="title">Camping</p>
+              <p class="caption">We have LOTS of camping opportunites that we offer througout the year. Most of our camping opportunites are tenting only while sometimes we do have cabin outings where we still do offer tents for those who need camping nights. If you have any questions about camping you can contact our outings coordinators <a href="mailto:outings@troop677.org" target="_blank">here</a></p>
+            </div>
+          </div>
+
+          <!--Slide 3 -->
+          <div class="row mySlides">
+            <div class="col-md-4">
+              <center>
+                <img class="img-responsive" src="https://www.bsacac.org/wp-content/uploads/2019/02/NOVA_4K.png">
+              </center>
+            </div>
+
+            <div class="col-md-8">
+              <p class="title">STEM Opportunities</p>
+              <p class="caption">We offer many opportinites not only to just do STEM outings and activities at Summer Camp (camp FE got a new STEM shelter built!) and many other camps. We also have mentors in the troop so scouts are offered the NOVA STEM card as well as the Supernova Award</p>
+            </div>
+          </div>
+
+          <!--Slide 4 -->
+          <div class="row mySlides">
+            <div class="col-md-4">
+              <center>
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/EZ_BM5DWQJyKdYeQBJ8qaIdZ6gkfkc3bponqabTbImX_n_pkYLwbo18AtkG2TTvxc9G4zOPQYW-UvEQi3LbAwoa73KK14aoWV8SzYyFMfY7soOcNXTpNEsZDDuISvPX11IMjUyi3KgT_o6vgibHnL3OXbH2Sqs3A50rSZ2m71Q67auW3bm49Gklic1d8CwQmBkkRjIWPJzvXAHstk0SNZBvN_yJI0qsTi67s1qf_bXjrKdE7xMRwc_kzFypPg89Wu48YHEg6mX_8Sje8n1YsTfOvwLGE1Mt6L5dcIR7dgqpd1OLwYVbF4bvOhpacJt4YfEybiHmNv2tOEGU4pLLRni_mo6IheQ3OZFnbEIwaEQIC3XHFKSswCLAJwIq2vZ2FoIBfdDLYnyyXJG_GRV1abKSCofJuAi4tvXhPfQMpzsQe7T9E3-hwcVDekjr1bobZREz5t5KJ6go2iMBWzjtor6J0e2cRJpmuwCqVP3_HnrbIgz2oKMKSiTD5xfDfLc7Dh3dJxIB9elP-o_p7sx1Rd_1NaiEwY0spS8tQs2s-KUuK0_zNoi_gGPfWdJyQxKa-jGyPs7VXp57jNGwk_U0TAXVLGYzTYxM4frK_C4LeCTdKJ5ynjZo9JO4t-V_9baR-sLqWukav7gwGZVqH5Wdc_3toECKk00_yqXcfbQyD0skJH3MEz5vui7LgRrur89ZQTq6fAr4rf0a7C1uy7jZ4rJS1=w473-h625-no?authuser=3">
+              </center>
+            </div>
+
+            <div class="col-md-8">
+              <p class="title">Emergency Prep/ First Aid Training</p>
+              <p class="caption">In our troop we have both emergency preparedness and first aid merit badge counselors, we also register with Teen Cert every year to get Teen Cert First Responder Training with FEMA. We also offer red card CPR certification to all the scouts and adults.</p>
+            </div>
+          </div>
+
+          <!--Slide 5 -->
+          <div class="row mySlides">
+            <div class="col-md-4">
+              <center>
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/_VQdPHFyVRzTfGNnXFxRpqys1N_aWmggnJxGk3DJoaZTZtNf4LPaXXW8EqfPuFtZooJSljEuRDsD_se2EHNhZVayYoAH0YupnWGIkMNIduf04U2BMgMUo7DXzLnKeMAWKIXCrWlCOijfxWDOQoFywgN3zcBR5BWzmB9fwzBFbBpVUE1KPFTux7MNJiVfOMiYm8W0s1SORK2D0JvsGWdps1FVQJe6nZrAKar_fPpBCfYCZq7WSBqrMEIy-2YnzkMYKyKFzep8LDADHQ1CkIAIoXwFBj07lge6mI0T7pz7wC3FC9qBcYxk7JL6WKufHZZolFqTiKsn-4-k_6vJZwr_cmdQr_12VWodSfNBDxHKg6if5BiwhI6Ht_wOVJrjx__GCgJXrQxX11xVRxH5EpIuM8Wy8qLGc97iN5SdiZI-b_KHf5mhhNEZBz1I_FcrbNVXanpeE0qmFnZDGKN-Gyjfr5NER0ayuF4DLM0yABzrszH-E0TwctO8J9E0Y0rSV22_seMke0Qv-VZNNxjH3Eea5bhd7ZKNLiM75_-UA7PeuFZQ-G0sZm7IwOx8PcP6VAEa1kYIUroA_7J2nnox6NWoQGGdl_qq57Z1XDp6UZ_CdPqCnTii2gt823BIV0aLqaHTr72J5xGgBK24dgFrEuRjSDJcUN-LgKFmX_gFXA5HObJX3748kKdreeWOreBXPvvh464ZwGinAQhZqPcPM43WLR-2=w473-h625-no?authuser=3">
+              </center>
+            </div>
+
+            <div class="col-md-8">
+              <p class="title">Scout Oath/ Law</p>
+              <p class="caption">We closely follow the Scout Oath, "On my honor I will do my best to do my duty to God and my country and to obey the Scout Law; to help other people at all times; to keep myself physically strong, mentally awake, and morally straight." As well as the 12 points of the Scout Law, "Trustworthy, loyal, helpful, friendly, courteous, kind, obedient, cheerful, thrifty, brave, clean, and reverent" with a passion. Read more <a href="https://www.scouting.org/about/faq/question10/" target="_blank">here</a>.</p>
+            </div>
+          </div>
+
+          <!--Slide 6 -->
+          <div class="row mySlides">
+            <div class="col-md-4">
+              <center>
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/n-ldn5xgkhGoE7B4yOBxg2hrWzgATc7FQjHGEFYE9JIvdvljSWkX37FOUYww1pRnLnKjvX-6IL4xyJavzE9iKjgqNduJY8QUN1-nQkFCxK3sMFoSRQSnfV_J819pXkYS_ZTUAAkUDRGOJNVVkzE4DI7ZL8BVIp8BQPse_lkmk3Kama3rGUVAcE4c7uggUmNjZtGCSEr2T3cVHN2rUGS3OPTtvwRl-b8O4a82nkr9XTDPyQtUT0yWdNnQci9nfB6xTE4t_BCW6Fz2lU37ftkPo-8ZEYDNBa5CQwdu13ybOchToW5_vlB9UhdvUln2YckzJB5QaHO7AWPnz_7_U1b7C3mfIr88A8rhUy7CaMol1DOwm0f6xmI41vAjwufkIvB5RlZJz-E6aa6DOfk_5o36VuDXSoKACYETIAsgNQDwmeyektL64-p-ijTspyJI48PxJJINpm-hiaUGWamppSbyXCc2vG2G6hqtjr91WjsIQGTat_I7DhLT4aUJQMrpssNc1IctvoRCR83R7W7131yB-9RbbdJ7yZUdL6LzucOFvcXFPJ4PX85b3JrRd2H6i8jmFJq9DQiGIn2WEdn8f47EoWjf-Mb1Z4pPxZuXFQsArHTv3p0lw-ealjjTyicCPJtAZMfsOy9yuofGLSU5e4d8tIGS1FoEIFucZMp6NVMyXiP94nlzAe4s_jKGD6U3wEWt2j34ThsAkHzqVvmQkBdSuIbc=w473-h625-no?authuser=3">
+              </center>
+            </div>
+
+            <div class="col-md-8">
+              <p class="title">Safety</p>
+              <p class="caption">Our troop has many trained RSOs (or Range Safety Officers) that run our shooting ranges as well as our axe throwing and archery ranges, and make sure that it is a calm and safe environment for scouts of all ages. Although there are some age restrictions with what scouts are allowed to shoot our troop strives to make sure everyone is having fun and getting a chance to do what they would like too.</p>
+            </div>
+          </div>
+
+          <!--Slide 7 -->
+          <div class="row mySlides">
+            <div class="col-md-4">
+              <center>
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/dfuQmR2_sYPRatm87Q17lU5eMpG1WbXHGn5u-el_ZQaI48g_3F_86IAWdlB1ve2SZTb32ZTaBLRxGOps5IKZrF6Aq5hldTty-0HDymdHVofsEOoL65LqBGADywTJBvdLeiNf4ObaoQzEiSbjlIvqjvM7oQ-bS-DeGtOnQDrUT45qQQWQHHHjCjsEy2FraMO-S2VTCiZlL0CaBkZDPEjUKKuY0cqnQvdE9lb2qUl5MR82VAMWPQPMB8sg0bCEGm0SdWS_K2g2mdH5tYXc9_kb2gGCQxjDZj4pCeOqKCqQU2oCh4j9MkTxJkSUkabHShmTt0xv4jFMHcPgzDOlYUx-ygPqsbcg-fCT-t6je9H4w9QE2UXchxqfZGLIsFB1-x2azVSHugmNoUuJmPMewmc4d8tvOW6BrLf4kVjkLJVu7K0EANLhGGM6Y0mJLGBDCTtVPNZZhZO4bYcJNtPtJeEpIpGe60BqsowrasR351PNxFAHaGwCVH8Q-5Rq1QFS3iFPemtNnTDe_PyTWWLaSBCKJ54ZEAMkt2NhBuRh1YBjwrLtpoZgaxR-MXaEkQUxhjkup-YtHUQwYR77a1UjzXV9r7y2bkNod86amd263WZ4Aupp8iWHU_gBKPFmczGcSaSRVCFUmHfkXl7UVLE6FjtWXfm4leSmA88UWQnYJKM5qXLzes9f_RE9okheRLw_y_iZqP5jci8QaXYji2Ze3EDvTf0R=w473-h625-no?authuser=3">
+              </center>
+            </div>
+
+            <div class="col-md-8">
+              <p class="title">Helping the Community</p>
+              <p class="caption">We have many outings that help out our St. Louis county community. Some of which include Wildwood Days (parade), Scouting for Food, conservation projects at state parks, etc. This provides an opportunity for our scouts to earn service hours as well as being able to contribute and be active in our community.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="dots-group" style="text-align:center">
+                <i class="fas fa-chevron-left prev" onclick="plusSlides(-1)"></i>
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span> 
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <i class="fas fa-chevron-right next" onclick="plusSlides(1)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- slideshow html end -->
+
+</body>
+<script>
+//Slideshow java
+var slideIndex = 1;
+  showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+}
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+}
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</html>
