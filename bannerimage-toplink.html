@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  </head>
+<style>
+
+/*TWH CSS overrides*/
+.new-row {margin: 0;}
+.page-title {display: none}
+.new-row text-center with-border {display: none}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    /* margin-top already 20 px */
+    margin-bottom: 20px;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+/*TWH CSS overrides ^^*/
+
+/* Virtualscouting link start */
+#link-bar-container {
+  background-color: #1d1d1f; 
+  height: 4.5rem;
+  width: 100%; 
+  position: fixed; 
+  left: 0px; 
+  text-align: center;
+  z-index: 999;
+}
+
+#announcement-bar {
+  font-size: 15px; 
+  color: white; 
+  padding: 12px;
+  font-family: Helvetica;
+}
+
+#announcement-bar-text {
+color: white;
+text-decoration: none;
+}
+
+#announcement-bar:hover {
+  text-decoration: underline;
+} /* Virtualscouting link end */
+
+#announcement-bar-text:hover {
+    background-color: transparent;
+    color: #fff;
+    text-shadow:
+    -0.1px -0.1px 0 rgb(255, 255, 255),
+    0.1px -0.1px 0 rgb(255, 255, 255),
+    -0.1px 0.1px 0 rgb(255, 255, 255),
+    0.1px 0.1px 0 rgb(255, 255, 255);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+
+/* Banner image css start */
+.cd-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*force picture size to be really big (limmited by max-width 100% under #banner-image)*/
+  width: 2000px;
+}
+
+.cd-section--bg-fixed {
+  min-height: 45rem;
+  background-attachment: fixed;
+}
+
+/* CHANGE IMAGE HERE */
+.cd-section {
+  background-image: url("https://lh3.googleusercontent.com/N4sPU9Y9hGCDzLWKD_MwWRTVsqRILUwWceJY6Z6I70l7cxTcOumGMcWZHIg-2JmQNDioJr3z8uzCskPejZfXYenP9TkRiAR3Ks54D9Qmqato4SPCuSovD4ie-XZHlQlma3DAfHq1CVwRW5kjJY3pJLhvbRcBg4Hb8EAkdKFmlLJyYzsMDj9EXED-6Vs_HH9y-D2pZjQcQy6g4uhtKmHeagLA0dBIUaXm_Dd4kv3Lq-uYhCSyrwkPze3AWnPc8y1-Ing28moorRwcFlUMqCOkKSIVLuhkvzYvT-KWmTxQUa5mR1Rx0MkvvjOSORhXvtIzOYkUsGYE7gJggl8zPdYyJ_jsAg9VfoAa0DB2PEKm6AO2wfcL5EXaobt9u8rtiRLFZpBnJLPnOICb8DWKQVqqSIjlMr6olpkF1kQAb9HxH-U1-swt7U-Oel10A3NPCxnRMebKu9X_x6rjVRkmrxC9Ge7SMCUaLQrde8GlXjR_I2IYiSrUSYr8qjqlvSV68lKESi7BaX_Qlm5Idhy6ID9_IrRFw0nq59MBbPKuKcHwi_RYIO_kxWui3xY0zDeq2ByKg2ef6dwQ5TTRIzMplRF3AeMuNr7_ED0ZI1ZBozESBiZWZPtZez6qsRpPPtGLiPvriD_zlya2sQfEmndkoK7aou2t8-XvqhwaEqgmbmcGjjh0FwKQII7dRnESzhp9CdfnbXhIEo0a-LgXhddQ_iAT01_2=w1250-h625-no?authuser=3");
+/* Troop 677 logo css */
+  text-decoration: none;
+  color: rgb(49, 133, 216);
+  font-size: 280px;
+  padding-top: 0.5%;
+  text-align: center;
+  display: inline-block;
+}
+
+/* BSA Logo image */
+.image-logo-BSA {
+  width: 230px !important;
+  height: 230px !important;
+  display: inline-block !important;
+  padding-bottom: none;
+}
+
+/* On smaller screens adjust logo */
+@media only screen and (max-width: 1600px) {
+  #image-logo-BSA {
+  display: none !important;
+  }
+}
+@media only screen and (max-width: 1301px) {
+  #banner-image {
+    padding-top: 7%;
+    font-size: 200px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #banner-image {
+    font-size: 0px;
+  }
+/* Link bar adjustments below here */
+  #link-bar-container {
+    top: 75px;
+  }
+}
+
+@media only screen and (max-width: 501px) {
+  #link-bar-container {
+    top: 95px;
+  }
+}
+
+@media only screen and (max-width: 489px) {
+  #link-bar-container {
+    top: 94px;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  #link-bar-container {
+    top: 118px;
+  }
+}
+
+@media only screen and (max-width: 421px) {
+  #link-bar-container {
+    top: 138px;
+  }
+}
+
+/* quick tabs at top dissapear below 400px */
+@media only screen and (max-width: 400px) {
+  #link-bar-container {
+    top: 64px;
+  }
+}
+
+@media only screen and (max-width: 381px) {
+  #link-bar-container {
+    display: none;
+  }
+  #banner-image {
+    display: none;
+  }
+}
+
+#banner-image {
+  position: relative;
+  left: 0px;
+  /* max-width limmits the 2000px to the full screen*/
+  max-width: 100%;
+} /* Banner image css end */
+
+</style>
+  <body>
+<!--Virtualscouting html link -->
+<div id="link-bar-container">
+    <ul> 
+        <p id="announcement-bar"><a id="announcement-bar-text" style="text-decoration: none; color:white;" href="https://virtualscouting.troop677.org/" target="_blank">Click here to jump to our virtual scouting page </a><span>›</span></p>
+    </ul> 
+</div>
+<!--banner html image-->
+<div id="banner-image" class="cd-section cd-section--bg-fixed">Troop 677  
+  <img class="image-logo-BSA" id="image-logo-BSA" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Boy_Scouts_of_America_corporate_trademark.svg/1200px-Boy_Scouts_of_America_corporate_trademark.svg.png"</img>
+  </div>
+  </body>
+</html>
