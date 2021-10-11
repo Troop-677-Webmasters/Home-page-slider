@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<head>
+<style>
+
+.quicklink-button {
+  float: left;
+  width: 100px;
+  height: 90px;
+  background-color: transparent;
+  transition: background-color, 0.3s;
+  border: 3px;
+  border-style: solid;
+  border-radius: 15px 15px 15px;
+  margin: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+/* Remove margin-top to quicklink layer just when screen size allows for one layer (no quicklinks stacked ontop eachother) */
+@media only screen and (min-width: 1262px) {
+  .quicklink-button {
+    margin-top: 0;
+  }
+}
+
+.quicklink-button i{
+  color: black;
+  font-size: 64px;
+}
+.icon-div {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.quicklink-caption-text {
+  text-align: center;
+  padding-top: 24px;
+}
+
+.quicklink-href {
+  text-color: black;
+  border-color: black;
+  color: black;
+  position: relative;
+}
+
+.quicklink-container {
+  overflow: inherit;
+  display: block;
+  float: left;
+  margin-bottom: 40px;
+}
+
+/*--------Animations--------*/
+
+.quicklink-button:hover {
+  background-color: #0002;
+  cursor: pointer;
+}
+
+.quicklink-button:active {
+  background-color: #0007;
+  cursor: pointer;
+}
+
+/* Take away blue color on hover/ click */
+
+.quicklink-href:hover {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+.quicklink-href:active {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+
+</style>
+</head>
+<body>
+<div class="quicklink-container">
+
+<!-- Row 1: 5 Buttons-->
+
+<a class="quicklink-href" href="https://www.troopwebhost.org/FormDetail.aspx?Menu_Item_ID=45961&Stack=1&Application_ID=855">
+<div class="quicklink-button">
+  <div class="icon-div"><i class="fas fa-envelope"></i></div>
+  <div class="quicklink-caption-text">Send Email</div>
+</div>
+</a>
+
+<a class="quicklink-href" href="https://www.troopwebhost.org/FormList.aspx?Menu_Item_ID=45922&Stack=1&Application_ID=855">
+<div class="quicklink-button">
+  <div class="icon-div"><i class="far fa-calendar-alt"></i></div>
+  <div class="quicklink-caption-text">Calendar</div>
+</div>
+</a>
+
+<a class="quicklink-href" href="https://www.troopwebhost.org/FormDetail.aspx?Menu_Item_ID=45903&Stack=1&Application_ID=855">
+<div class="quicklink-button">
+  <div class="icon-div"><i class="fas fa-sitemap"></i></div>
+  <div class="quicklink-caption-text">My Personal Information</div>
+</div>
+</a>
+
+<a class="quicklink-href" href="https://www.troopwebhost.org/FormDetail.aspx?Menu_Item_ID=45900&Stack=0&Application_ID=855">
+<div class="quicklink-button">
+  <div class="icon-div"><i class="fas fa-money-check-alt" style="font-size: 60px; padding-top: 3px;"></i></div>
+  <div class="quicklink-caption-text">My Money</div>
+</div>
+</a>
+
+<a class="quicklink-href" href="https://www.troopwebhost.org/FormList.aspx?Menu_Item_ID=45899&Stack=1&Application_ID=855">
+<div class="quicklink-button">
+  <div class="icon-div"><i class="fas fa-child"></i></div>
+  <div class="quicklink-caption-text">My Scouts (Adults)</div>
+</div>
+</a>
+
+<!-- Row 2 (margin-top: more)-->
+
+<!-- This is the only PRO one -->
+<a class="quicklink-href" href="https://www.troopwebhost.org/FormDetail.aspx?Menu_Item_ID=45911&Stack=1&Application_ID=855">
+<div class="quicklink-button">
+  <div class="icon-div"><i class="fas fa-list"></i></div>
+  <div class="quicklink-caption-text">My Rank Advancement</div>
+</div>
+</a>
+
+<a class="quicklink-href" href="https://www.troopwebhost.org/formCustom.aspx?Menu_Item_ID=48262&Stack=0&Custom_Form_ID=7&Application_ID=855">
+<div class="quicklink-button">
+  <div class="icon-div"><i class="far fa-question-circle"></i></div>
+  <div class="quicklink-caption-text">Help Desk</div>
+</div>
+</a>
+
+<a class="quicklink-href" href="https://www.troopwebhost.org/bsaShowTroopForms.aspx?Menu_Item_ID=45870&Stack=1&Application_ID=855">
+<div class="quicklink-button">
+  <div class="icon-div"><i class="fas fa-folder"></i></div>
+  <div class="quicklink-caption-text">Forms & Documents</div>
+</div>
+</a>
+
+<a class="quicklink-href" href="https://www.troopwebhost.org/FormDetail.aspx?Menu_Item_ID=45912&Stack=1&Application_ID=855">
+<div class="quicklink-button">
+  <div class="icon-div"><i class="fas fa-shield"></i></div>
+  <div class="quicklink-caption-text">My Merit Badges</div>
+</div>
+</a>
+
+<a class="quicklink-href" href="https://gallery.troop677.org/" target="_blank">
+<div class="quicklink-button">
+  <div class="icon-div"><i class="far fa-images"></i></div>
+  <div class="quicklink-caption-text">Photo Gallery</div>
+</div>
+</a>
+
+</div>
+</body>
+</html>
